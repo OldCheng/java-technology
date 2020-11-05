@@ -1,4 +1,4 @@
-package main.com.introduction.reflect;
+package main.java.com.introduction.reflect;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -31,7 +31,7 @@ import java.lang.reflect.Method;
 public class ReflectMethodDemo {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         //1.获取Class对象
-        Class clazz = Class.forName("main.com.introduction.reflect.Student");
+        Class clazz = Class.forName("main.java.com.introduction.reflect.Student");
         //2.获取所有公有方法
         System.out.println("---------------获取所有的”公有“方法-------------------");
         Method[] methods = clazz.getMethods();

@@ -1,4 +1,4 @@
-package main.com.introduction.reflect;
+package main.java.com.introduction.reflect;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -25,7 +25,7 @@ import java.lang.reflect.InvocationTargetException;
 public class ReflectConstructorDemo {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         //1.加载Class对象
-        Class clazz = Class.forName("main.com.introduction.reflect.Student");
+        Class clazz = Class.forName("main.java.com.introduction.reflect.Student");
 
         //2.获取所有公有构造方法
         System.out.println("-----------------所有公有构造方法-----------------------");

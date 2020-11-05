@@ -1,2 +1,0 @@
-className = main.com.introduction.reflect.Student
-methodName = pro

@@ -1,4 +1,4 @@
-package main.com.introduction.reflect;
+package main.java.com.introduction.reflect;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
 public class ReflectMainDemo {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         //1、获取Student对象的字节码
-        Class clazz = Class.forName("main.com.introduction.reflect.Student");
+        Class clazz = Class.forName("main.java.com.introduction.reflect.Student");
 
         //2、获取main方法
         Method methodMain = clazz.getMethod("main", String[].class);//第一个参数：方法名称，第二个参数：方法形参的类型，

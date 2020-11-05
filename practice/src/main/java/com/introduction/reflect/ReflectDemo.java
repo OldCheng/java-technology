@@ -1,4 +1,4 @@
-package main.com.introduction.reflect;
+package main.java.com.introduction.reflect;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -23,7 +23,7 @@ public class ReflectDemo {
 
         //第三种方式获取Class对象
         try {
-            Class clazz3 = Class.forName("main.com.introduction.reflect.Student");//注意此字符串必须是真实路径，就是带包名的类路径，包名.类名
+            Class clazz3 = Class.forName("main.java.com.introduction.reflect.Student");//注意此字符串必须是真实路径，就是带包名的类路径，包名.类名
             System.out.println(clazz3 == calzz2);//判断三种方式是否获取的是同一个Class对象
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -31,7 +31,7 @@ public class ReflectDemo {
         //-----------------------------------------------------------
         System.out.println("-----------------------------------------------");
         try {
-            Class clazz4 = Class.forName("main.com.introduction.reflect.Student");
+            Class clazz4 = Class.forName("main.java.com.introduction.reflect.Student");
             Constructor constructor = clazz4.getConstructor(String.class);
             Object hello_reflect = constructor.newInstance("hello reflect");
 

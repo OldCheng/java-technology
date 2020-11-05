@@ -1,4 +1,4 @@
-package main.com.senior;
+package main.java.com.senior;
 
 /**
  * @Description

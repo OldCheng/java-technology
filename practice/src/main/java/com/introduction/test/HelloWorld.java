@@ -1,4 +1,4 @@
-package main.com.introduction.test;
+package main.java.com.introduction.test;
 
 /**
  * @Description

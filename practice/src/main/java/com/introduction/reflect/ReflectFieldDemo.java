@@ -1,4 +1,4 @@
-package main.com.introduction.reflect;
+package main.java.com.introduction.reflect;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -30,7 +30,7 @@ public class ReflectFieldDemo {
 
     public static void main(String[] args) throws ClassNotFoundException, NoSuchFieldException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         //1.获取Class对象
-        Class clazz = Class.forName("main.com.introduction.reflect.Student");
+        Class clazz = Class.forName("main.java.com.introduction.reflect.Student");
         //2.获取字段
         System.out.println("--------------获取所有公有的字段-----------------------");
         Field[] fields = clazz.getFields();

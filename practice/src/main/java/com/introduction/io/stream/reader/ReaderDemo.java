@@ -28,10 +28,10 @@ public class ReaderDemo {
         Reader input = null ;   // 准备好一个输入的对象
         input = new FileReader(file)  ;    // 通过对象多态性，进行实例化
         // 第3步、进行读操作
-        char c[] = new char[1024] ;     // 所有的内容都读到此数组之中
-        int len = input.read(c) ;       // 读取内容
+        char chars[] = new char[1024] ;     // 所有的内容都读到此数组之中
+        int len = input.read(chars) ;       // 读取内容
         // 第4步、关闭输出流
         input.close() ;                     // 关闭输出流
-        System.out.println("内容为：" + new String(c,0,len)) ;  // 把字符数组变为字符串输出
+        System.out.println("内容为：" + new String(chars,0,len)) ;  // 把字符数组变为字符串输出
     }
 }

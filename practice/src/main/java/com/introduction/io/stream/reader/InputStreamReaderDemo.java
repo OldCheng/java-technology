@@ -19,10 +19,10 @@ public class InputStreamReaderDemo {
         File file = new File(prefixPath + "outputStreamWriter.txt") ;  // 声明File对象
         Reader reader = null ;
         reader = new InputStreamReader(new FileInputStream(file)) ;    // 将字节流变为字符流
-        char c[] = new char[1024] ;
-        int len = reader.read(c) ;  // 读取
+        char chars[] = new char[1024] ;
+        int len = reader.read(chars) ;  // 读取
         reader.close() ;    // 关闭
-        System.out.println(new String(c,0,len)) ;
+        System.out.println(new String(chars,0,len)) ;
     }
 
     /**

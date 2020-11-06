@@ -6,6 +6,13 @@ import java.io.*;
 
 /**
  * @Description
+ * 方法  描述
+ * public void close() throws IOException  关闭输出流
+ * public void flush() throws IOException  刷新缓冲区
+ * public void write(byte[] b) throws IOException  将一个byte数组写入数据流
+ * public void write(byte[] b,int off,int len)throws IOException   将一个指定范围的byte数组写入数据流
+ * public abstract void write(int b) throws IOException    将一个字节数据写入数据流
+ *
  * @Author 程杰
  * @Date 2020/11/5 20:49
  * @Version 1.0
@@ -20,7 +27,7 @@ public class OutPutStreamDemo {
         try {
             out = new FileOutputStream(file);
             //3、执行写入操作
-            String str= "Hello world 11";
+            String str= "Hello world 11 wwwwww11";
             byte b[] = str.getBytes();
             out.write(b);
             out.flush();

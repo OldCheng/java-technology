@@ -14,7 +14,7 @@ public class ExceptionDemo1 {
             a = 42 / d;
             System.out.println("This will not be printed.");
         } catch (ArithmeticException e) { // catch divide-by-zero error
-            System.out.println("========"+e);
+            System.out.println("========"+ e);
             System.out.println("Division by zero.");
         }
         System.out.println("After catch statement.");

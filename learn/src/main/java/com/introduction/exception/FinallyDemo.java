@@ -7,7 +7,7 @@ package main.java.com.introduction.exception;
  * @Version 1.0
  */
 public class FinallyDemo {
-    // Through an exception out of the method.
+    /**Through an exception out of the method.*/
     static void procA() {
         try {
             System.out.println("inside procA");
@@ -17,7 +17,7 @@ public class FinallyDemo {
         }
     }
 
-    // Return from within a try block.
+    /**Return from within a try block.*/
     static void procB() {
         try {
             System.out.println("inside procB");
@@ -26,7 +26,7 @@ public class FinallyDemo {
             System.out.println("procB's finally");
         }
     }
-    // Execute a try block normally.
+/**Execute a try block normally.*/
     static void procC() {
         try {
             System.out.println("inside procC");
@@ -35,7 +35,7 @@ public class FinallyDemo {
         }
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         try {
             procA();
         } catch (Exception e) {

@@ -12,6 +12,7 @@ public class MyException extends Exception {
         detail = a;
     }
 
+    @Override
     public String toString() {
         return "MyException[" + detail + "]";
     }

@@ -23,7 +23,8 @@ public class ThrowDemo {
             throw new NullPointerException("demo");
         } catch(NullPointerException e) {
             System.out.println("Caught inside demoproc.");
-            throw e; // rethrow the exception
+            // rethrow the exception
+            throw e;
         }
     }
 

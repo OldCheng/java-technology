@@ -18,7 +18,7 @@ public class ThrowDemo1 {
         }
         System.out.println("----end----");
     }
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         throwOne();
     }
 

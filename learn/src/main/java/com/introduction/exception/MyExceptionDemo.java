@@ -15,7 +15,7 @@ public class MyExceptionDemo {
         System.out.println("Normal exit");
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         try {
             compute(1);
             compute(20);

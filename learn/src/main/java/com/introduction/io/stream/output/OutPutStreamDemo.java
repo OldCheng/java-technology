@@ -28,8 +28,8 @@ public class OutPutStreamDemo {
             out = new FileOutputStream(file);
             //3、执行写入操作
             String str= "Hello world 11 wwwwww11";
-            byte b[] = str.getBytes();
-            out.write(b);
+            byte[] bytes = str.getBytes();
+            out.write(bytes);
             out.flush();
         } catch (FileNotFoundException e) {
             e.printStackTrace();

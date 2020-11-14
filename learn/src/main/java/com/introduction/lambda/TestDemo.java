@@ -17,6 +17,11 @@ import static java.util.stream.Collectors.toList;
  */
 public class TestDemo {
     public static void main(String[] args) {
+
+        Student student1 = new Student(1L,"张三","ZhangSan",1,"java",5000.00);
+        System.out.println(student1);
+        System.out.println("ssssssssssssssssssssssssssssssssssssssssssssssssssssss");
+
         List<Student> studentList = getStudentList();
 
         aaa( cos -> System.out.println("kkkkkkk"));

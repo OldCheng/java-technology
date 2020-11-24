@@ -16,7 +16,8 @@ public class ExceptionDemo1 {
         } catch (ArithmeticException e) { // catch divide-by-zero error
             System.out.println("========"+ e);
             System.out.println("Division by zero.");
-            System.out.println("========");
+            System.out.println("========"+ e.getMessage());
+            System.out.println("========11");
             e.printStackTrace();
         }
         System.out.println("After catch statement.");

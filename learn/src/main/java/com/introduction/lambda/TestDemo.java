@@ -18,6 +18,10 @@ import static java.util.stream.Collectors.toList;
 public class TestDemo {
     public static void main(String[] args) {
 
+        String asd =null;
+
+        System.out.println("====:"+(String)asd);
+
         Student student1 = new Student(1L,"张三","ZhangSan",1,"java",5000.00);
         System.out.println(student1);
         System.out.println("ssssssssssssssssssssssssssssssssssssssssssssssssssssss");

@@ -1,5 +1,8 @@
 package main.java.com.introduction.test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @Description
  * @Author 程杰
@@ -9,5 +12,8 @@ package main.java.com.introduction.test;
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("hello world--!!!!!");
+        List<String> list = new ArrayList<>();
+        list.get(0);
+
     }
 }

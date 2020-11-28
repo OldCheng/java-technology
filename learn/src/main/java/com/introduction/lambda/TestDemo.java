@@ -18,6 +18,27 @@ import static java.util.stream.Collectors.toList;
 public class TestDemo {
     public static void main(String[] args) {
 
+        List<Student> studentList1 = getStudentList1();
+
+        studentList1.stream().collect(Collectors.groupingBy(Student::getSalary));
+
+        System.out.println("--------------1----------------------------------------------");
+
+        handle(getStudentList());
+        System.out.println("------------------------------------------------------------");
+
+
+
+        List<Student> studentList = getStudentList();
+        for (Student std : studentList) {
+            std.setName("wanglaoliu");
+        }
+
+
+        studentList.forEach(student -> System.out.println(student));
+
+        System.out.println("------------------------------------------------------------");
+
         String asd =null;
 
         System.out.println("====:"+(String)asd);
@@ -26,7 +47,7 @@ public class TestDemo {
         System.out.println(student1);
         System.out.println("ssssssssssssssssssssssssssssssssssssssssssssssssssssss");
 
-        List<Student> studentList = getStudentList();
+       // List<Student> studentList = getStudentList();
 
         aaa( cos -> System.out.println("kkkkkkk"));
         System.out.println("------------------------------------");
@@ -74,6 +95,21 @@ public class TestDemo {
         studentList.add(student4);
         studentList.add(student5);
         return studentList;
+    }
+
+    public static List<Student> getStudentList1(){
+        List<Student> studentList = new ArrayList<>();
+        return studentList;
+    }
+
+    public static void handle(List<Student> list){
+        list.forEach(std ->{
+            std.setName("wanglaoliu");
+        });
+        list.forEach(student -> {
+            System.out.println(student);
+        });
+
     }
 
     public static void aaa(Consumer consumer){

@@ -13,7 +13,15 @@ public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("hello world--!!!!!");
         List<String> list = new ArrayList<>();
-        list.get(0);
+
+        int s = 1;
+        for(;;){
+            //System.out.println(s++);
+            if(s>1000){
+                break;
+            }
+        }
+
 
     }
 }

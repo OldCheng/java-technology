@@ -30,9 +30,8 @@ public class TestDemo {
 
 
         List<Student> studentList = getStudentList();
-        for (Student std : studentList) {
-            std.setName("wanglaoliu");
-        }
+        studentList.stream().peek(std -> std.setName("gogogogog")).collect(Collectors.toList());
+
 
 
         studentList.forEach(student -> System.out.println(student));

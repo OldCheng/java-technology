@@ -15,7 +15,6 @@ public class TestDemo {
         SubClass subClass = (SubClass) superClass;
         subClass.testVoid();
 
-
     }
 
 }

@@ -10,18 +10,24 @@ import java.util.List;
  * @Version 1.0
  */
 public class HelloWorld {
+
+     static int value = 33;
+
     public static void main(String[] args) {
         System.out.println("hello world--!!!!!");
         List<String> list = new ArrayList<>();
+        HelloWorld h = new HelloWorld();
 
-        int s = 1;
-        for(;;){
-            //System.out.println(s++);
-            if(s>1000){
-                break;
-            }
+        if(false || h.asd()){
+            System.out.println("----------");
         }
 
 
+    }
+
+
+    public boolean asd(){
+        System.out.println("diaoyongl");
+        return false;
     }
 }

@@ -17,5 +17,21 @@ public class TestDemo {
         System.out.println("===============");
         System.out.println((a == d));
         System.out.println((a == e));
+
+        System.out.println("---------------------------------------");
+        String str1 = "abc";
+
+        String str2 = "abc";
+
+        System.out.println(str1 == str2);
+
+        String all = "abc2";
+
+        String str3 = "abc" + 2;
+        String str4 = "abc2";
+
+        System.out.println(all == str3);
+
+
     }
 }

@@ -71,6 +71,12 @@ public class Student {
     public Student() {
     }
 
+    public Student(Long id, String name, String engName) {
+        this.id = id;
+        this.name = name;
+        this.engName = engName;
+    }
+
     public Student(Long id, String name, String engName, int sex, String work, Double salary) {
         this.id = id;
         this.name = name;

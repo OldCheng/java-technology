@@ -1,5 +1,8 @@
 package main.java.com.introduction.test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @Author 程杰
  * @Date 2020/12/3 20:43
@@ -32,6 +35,15 @@ public class TestDemo {
 
         System.out.println(all == str3);
 
+        List<String> list = new ArrayList<>();
+        list.add("a");
+        list.add("b");
+        list.add("c");
+        for (String s : list) {
+            s = s +"d";
+            System.out.println(s);
+        }
+        System.out.println(list);
 
     }
 }

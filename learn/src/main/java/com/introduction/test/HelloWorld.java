@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class HelloWorld {
 
-     static int value = 33;
+    public static int value = 33;
 
     public static void main(String[] args) {
         System.out.println("hello world--!!!!!");

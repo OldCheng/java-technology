@@ -3,8 +3,8 @@ package main.java.com.introduction.lambda;
 import main.java.com.introduction.entity.Student;
 
 import java.util.*;
-import java.util.function.Consumer;
-import java.util.function.Predicate;
+import java.util.concurrent.Callable;
+import java.util.function.*;
 import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toList;
@@ -15,8 +15,11 @@ import static java.util.stream.Collectors.toList;
  * @Date 2020/11/12 17:14
  * @Version 1.0
  */
-public class TestDemo {
+public class TestDemo{
     public static void main(String[] args) {
+
+        Supplier<Student> s = Student::new;
+        System.out.println(s.get());
 
         List<Student> studentList1 = getStudentList1();
 
@@ -27,11 +30,8 @@ public class TestDemo {
         handle(getStudentList());
         System.out.println("------------------------------------------------------------");
 
-
-
         List<Student> studentList = getStudentList();
         studentList.stream().peek(std -> std.setName("gogogogog")).collect(Collectors.toList());
-
 
 
         studentList.forEach(student -> System.out.println(student));

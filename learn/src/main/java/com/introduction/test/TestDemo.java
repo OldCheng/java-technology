@@ -9,6 +9,8 @@ import java.util.List;
  * @Version 1.0
  */
 public class TestDemo {
+    public static double i = Math.random();
+
     public static void main(String[] args) {
         String a = "hello2";
         final String b = "hello";

@@ -9,6 +9,8 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
 
@@ -32,7 +34,7 @@ public class ActionDemo {
         //多条件组合排序
         personList.sort(comparator.reversed().thenComparing(Person::getAge));
 
-        System.out.println("-----------------------------------------------------");
+        System.out.println("----------------函数复合-------------------------------------");
         Function<String, String> addHeader = Letter::addHeader;
         Function<String, String> transformationPipeline
                 = addHeader.andThen(Letter::checkSpelling)
@@ -47,6 +49,49 @@ public class ActionDemo {
                         .sorted(Comparator.comparing(Dish::getCalories))
                         .map(Dish::getName)
                         .collect(toList());
+
+        System.out.println("-----------------------map----flatMap--------------------------");
+        String[] arrayOfWords = {"Goodbye", "World"};
+        Stream<String> streamOfwords = Arrays.stream(arrayOfWords);
+        Arrays.stream(arrayOfWords).map(word -> word.split(""))
+                .map(Arrays::stream)
+                .distinct()
+                .collect(toList());
+        List<String[]> collect = Arrays.asList(arrayOfWords).stream().map(word -> word.split(""))
+                .distinct()
+                .collect(toList());
+       // collect.forEach(i-> Arrays.asList(i).forEach(System.out::println));
+        Arrays.stream(arrayOfWords).map(w -> w.split(""))
+                .flatMap(Arrays::stream)
+                .distinct()
+                .collect(Collectors.toList());
+        System.out.println("-----------------------map----flatMap----练习----------------------");
+        //给定两个数字列表，如何返回所有的数对呢？例如，给定列表[1, 2, 3]和列表[3, 4]，应
+        //该返回[(1, 3), (1, 4), (2, 3), (2, 4), (3, 3), (3, 4)]。为简单起见，你可以用有两个元素的数组来代
+        //表数对。
+        List<Integer> number1 = Arrays.asList(1,2,3);
+        Stream<Integer> integerStream = number1.stream().map(i -> i.intValue()).map(s -> s.intValue());
+        List<Integer> number2 = Arrays.asList(3,4);
+        List<int[]> collect1 = number1.stream()
+                .flatMap(i -> number2.stream()
+                        .map(j -> new int[]{i, j}
+                        )
+                ).collect(toList());
+
+        //由值创建流
+        Stream<String> stream = Stream.of("Java 8 ", "Lambdas ", "In ", "Action");
+        stream.map(String::toUpperCase).forEach(System.out::println);
+        //你可以使用empty得到一个空流，如下所示：
+        Stream<String> emptyStream = Stream.empty();
+
+        //由数组创建流
+        int[] numbers = {2, 3, 5, 7, 11, 13};
+        int sum = Arrays.stream(numbers).sum();
+
+        Stream.iterate(0, n -> n + 2)
+                .limit(10)
+                .forEach(System.out::println);
+
 
     }
 

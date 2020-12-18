@@ -23,6 +23,16 @@ public class HelloWorld {
         }
 
 
+        String s1 ="qwer";
+        String s2 ="qw"+new String("er");
+        String s3 ="qw"+"er";
+        System.out.println(s1==s3);
+        System.out.println(s1==s2);
+
+        String str = ";t;;";
+
+        String [] s = str.split(";");
+
     }
 
 
@@ -30,4 +40,5 @@ public class HelloWorld {
         System.out.println("diaoyongl");
         return false;
     }
+
 }

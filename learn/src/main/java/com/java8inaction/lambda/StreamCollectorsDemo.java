@@ -79,5 +79,32 @@ public class StreamCollectorsDemo {
                                         maxBy(comparingInt(Dish::getCalories)),
                                         Optional::get)));
 
+
+
+        Map<Dish.Type, Set<CaloricLevel>> caloricLevelsByType =
+                menu.stream().collect(
+                        groupingBy(Dish::getType, mapping(
+                                dish -> { if (dish.getCalories() <= 400) {
+                                    return CaloricLevel.DIET;
+                                } else if (dish.getCalories() <= 700) {
+                                    return CaloricLevel.NORMAL;
+                                } else {
+                                    return CaloricLevel.FAT;
+                                }
+                                },toSet())
+                        )
+                );
+
+        //分区
+        Map<Boolean, List<Dish>> partitionedMenu =
+                menu.stream().collect(partitioningBy(Dish::isVegetarian));
+        //那么通过Map中键为true的值，就可以找出所有的素食菜肴了：
+        List<Dish> vegetarianDishes = partitionedMenu.get(true);
+
+        List<Dish> vegetarianDishes1 =
+                menu.stream().filter(Dish::isVegetarian).collect(toList());
+
+
+
     }
 }

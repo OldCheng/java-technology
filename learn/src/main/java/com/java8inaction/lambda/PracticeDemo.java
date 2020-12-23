@@ -3,10 +3,7 @@ package main.java.com.java8inaction.lambda;
 import main.java.com.introduction.entity.Trader;
 import main.java.com.introduction.entity.Transaction;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -107,5 +104,8 @@ public class PracticeDemo {
 
                 transactions.stream()
                         .min(comparing(Transaction::getValue)).ifPresent(System.out::println);
+        Stream<List<Integer>> listStream = Stream.of(Arrays.asList(1, 2, 3));
+        listStream.flatMap(Collection::stream);
+
     }
 }

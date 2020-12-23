@@ -1,6 +1,7 @@
 package main.java.com.introduction.test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -32,6 +33,10 @@ public class HelloWorld {
         String str = ";t;;";
 
         String [] s = str.split(";");
+        String [] strarr = {"123123",""};
+
+        Long[] skuIds = Arrays.stream(strarr).map(Long::valueOf).toArray(Long[]::new);
+
 
     }
 

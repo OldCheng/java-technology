@@ -26,4 +26,8 @@ public class SuperClass {
         System.out.println("-----------父类function-----------");
     }
 
+
+    private void pr(){
+        System.out.println("父 pr()");
+    }
 }

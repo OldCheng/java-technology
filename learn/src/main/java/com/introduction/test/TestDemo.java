@@ -2,6 +2,7 @@ package main.java.com.introduction.test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * @Author 程杰
@@ -9,9 +10,29 @@ import java.util.List;
  * @Version 1.0
  */
 public class TestDemo {
+
+    static int num = 5;
+
     public static double i = Math.random();
 
     public static void main(String[] args) {
+
+
+        Random random = new Random(24);
+        for(i=0;i<100;i++){
+            System.out.println(random.nextInt(20));
+        }
+
+
+        TestDemo testDemo = new TestDemo();
+
+        TestDemo testDemo1 = new TestDemo();
+        TestDemo testDemo2 = new TestDemo();
+        System.out.println(testDemo.num++);
+        System.out.println(testDemo1.num);
+        System.out.println(testDemo2.num);
+        System.out.println("------"+num);
+
         String a = "hello2";
         final String b = "hello";
         String c = "hello";

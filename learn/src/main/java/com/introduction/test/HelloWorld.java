@@ -15,6 +15,10 @@ public class HelloWorld {
     public static int value = 33;
 
     public static void main(String[] args) {
+        String fileName = "商品咨询数据.xlsx";
+        int i = fileName.lastIndexOf(".");
+
+
         System.out.println("hello world--!!!!!");
         List<String> list = new ArrayList<>();
         HelloWorld h = new HelloWorld();

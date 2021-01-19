@@ -1,5 +1,6 @@
 package main.java.com.introduction.polymorphic;
 
+
 /**
  * @Description
  * @Author 程杰
@@ -11,10 +12,9 @@ public class TestDemo {
         SuperClass superClass = new SubClass();
         superClass.function();
         //superClass.testVoid();
-
+        ((SubClass) superClass).pr();
         SubClass subClass = (SubClass) superClass;
         subClass.testVoid();
-
     }
 
 }

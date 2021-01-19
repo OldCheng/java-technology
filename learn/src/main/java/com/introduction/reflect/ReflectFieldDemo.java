@@ -53,9 +53,9 @@ public class ReflectFieldDemo {
         Student stu = (Student)obj;
         System.out.println("验证姓名：" + stu.name);
 
-
         System.out.println("-----------------获取私有字段---并调用-------------------------");
         Field filed = clazz.getDeclaredField("body");
+
         System.out.println(filed);
         filed.setAccessible(true);//暴力反射，解除私有限定
         filed.set(obj, "身体是革命的本钱");

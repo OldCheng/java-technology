@@ -104,7 +104,9 @@ public class StreamCollectorsDemo {
         List<Dish> vegetarianDishes1 =
                 menu.stream().filter(Dish::isVegetarian).collect(toList());
 
+        Map<Boolean, List<Dish>> collect = menu.stream().collect(
+                partitioningBy(m -> m.getCalories() > 10000));
 
-
+        List<Integer> collect1 = collect.get(true).stream().map(d-> d.getCalories()).collect(toList());
     }
 }

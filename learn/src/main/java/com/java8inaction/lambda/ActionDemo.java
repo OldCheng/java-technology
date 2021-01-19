@@ -46,7 +46,7 @@ public class ActionDemo {
         List<String> lowCaloricDishesName =
                 menu.parallelStream()
                         .filter(d -> d.getCalories() < 400)
-                        .sorted(Comparator.comparing(Dish::getCalories))
+                        .sorted(Comparator.comparing(Dish::getCalories).reversed())
                         .map(Dish::getName)
                         .collect(toList());
 

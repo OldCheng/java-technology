@@ -30,5 +30,9 @@ public class SubClass extends SuperClass {
 
     public void testVoid(){
         System.out.println("-----------子类testVoid-----------");
-    };
+    }
+
+    public void  pr(){
+        System.out.println("子 pr()");
+    }
 }

@@ -1,8 +1,6 @@
 package main.java.com.introduction.test;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 /**
  * @Author 程杰
@@ -16,7 +14,6 @@ public class TestDemo {
     public static double i = Math.random();
 
     public static void main(String[] args) {
-
 
         Random random = new Random(24);
         for(i=0;i<100;i++){

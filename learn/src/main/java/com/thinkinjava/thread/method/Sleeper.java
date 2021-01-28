@@ -18,12 +18,13 @@ public class Sleeper extends Thread {
     @Override
     public void run() {
         try {
-            System.out.println(" 线程名称：" + Thread.currentThread().getName());
+            System.out.println(" 线程名称：" + Thread.currentThread().getName() + " isInterrupted() = " + isInterrupted());
             sleep(duration);
         }catch (InterruptedException e){
             System.out.println(getName() + " was interrupted ." + "isInterrupted() " + isInterrupted());
             return;
         }
+        System.out.println(getName()  +  " isInterrupted " + isInterrupted());
         System.out.println(getName()  +  " has awakened ");
     }
 }

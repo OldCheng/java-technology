@@ -11,8 +11,8 @@ public class Joining {
         Sleeper sleeper = new Sleeper("sleepy", 5000),
                 grumpy = new Sleeper("grumpy", 5000);
 
-//        Joiner dopey = new Joiner("dopey", sleeper),
-//                doc = new Joiner("doc", grumpy);
+        Joiner dopey = new Joiner("dopey", sleeper),
+                doc = new Joiner("doc", grumpy);
         grumpy.interrupt();
     }
 

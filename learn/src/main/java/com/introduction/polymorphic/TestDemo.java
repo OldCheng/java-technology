@@ -10,11 +10,11 @@ package main.java.com.introduction.polymorphic;
 public class TestDemo {
     public static void main(String[] args) {
         SuperClass superClass = new SubClass();
-        superClass.function();
-        //superClass.testVoid();
-        ((SubClass) superClass).pr();
-        SubClass subClass = (SubClass) superClass;
-        subClass.testVoid();
+//        superClass.function();
+//        //superClass.testVoid();
+//        ((SubClass) superClass).pr();
+//        SubClass subClass = (SubClass) superClass;
+//        subClass.testVoid();
     }
 
 }

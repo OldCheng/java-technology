@@ -28,6 +28,17 @@ public class Demo {
             }
         });
 
+        list.sort(Comparator.comparingInt(Product::getPrice));
+
+        Collections.max(list, Comparator.comparingInt(Product::getPrice));
+
+        List<String> listqq = new ArrayList<>();
+        listqq.add("f");
+        listqq.add("g");
+        listqq.add("a");
+        listqq.sort(Comparator.reverseOrder());
+        System.out.println(listqq);
+
         System.out.println(list);
 
     }

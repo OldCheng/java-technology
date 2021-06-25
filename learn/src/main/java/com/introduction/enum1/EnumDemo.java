@@ -11,5 +11,9 @@ public class EnumDemo {
         System.out.println(simpleEnum);
 
         System.out.println(SimpleEnum.values());
+        System.out.println("-----------------------");
+        Size l = Size.valueOf(Size.class, "LARGE");
+        System.out.println(l.toString());
+
     }
 }

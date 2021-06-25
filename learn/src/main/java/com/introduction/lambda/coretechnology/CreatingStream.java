@@ -13,6 +13,16 @@ import java.util.stream.Stream;
 
 public class CreatingStream {
     public static void main(String[] args) throws IOException {
+
+
+        List<Integer> collect = Stream.iterate(1, p -> p * 2)
+                .peek(e -> System.out.println("fetching:" + e)).limit(20).collect(Collectors.toList());
+
+        String s = "saassasasa";
+
+
+        System.out.println("-----------------------------------");
+
         Path path = Paths.get("file/content.txt");
         String contents = new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
 

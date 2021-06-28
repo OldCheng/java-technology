@@ -1,4 +1,4 @@
-package main.java.com.introduction.lambda.coretechnology;
+package main.java.com.introduction.coretechnology;
 
 import java.io.IOException;
 import java.math.BigInteger;

@@ -9,6 +9,7 @@ import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Test {
     public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {
@@ -75,6 +76,22 @@ public class Test {
         Map<Integer, Student> collect2 = studentList1.stream()
                 .collect(Collectors.toMap(Student::getAge, Function.identity(),
                         (ev1, ev2) -> ev2
+                ));
+
+
+        Locale[] availableLocales = Locale.getAvailableLocales();
+
+        Stream<Locale> locales = Stream.of(availableLocales);
+
+        Map<String, Set<String>> collect4 = locales.collect(
+                Collectors.toMap(
+                        Locale::getDisplayCountry,
+                        l -> Collections.singleton(l.getDisplayLanguage(l)),
+                        (a, b) -> {
+                            Set<String> union = new HashSet<>(a);
+                            union.addAll(b);
+                            return union;
+                        }
                 ));
 
 

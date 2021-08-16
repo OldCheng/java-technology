@@ -16,8 +16,8 @@ public class Test {
 
         System.out.println(x++);
         System.out.println(++x);
-
-
+        String sss = "h t t p s : / / w w w . z h i h u . c o m / q u e s t i o n / 5 11 0 2 3 0 8 / a n s w e r / 1 2 4 4 4 111 5 ";
+        System.out.println(sss.replace(" ", ""));
         List<String> list1 = new ArrayList<>();
         list1.add("a");
         list1.add("b");

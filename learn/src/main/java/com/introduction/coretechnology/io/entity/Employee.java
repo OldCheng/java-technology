@@ -1,8 +1,9 @@
 package main.java.com.introduction.coretechnology.io.entity;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Employee {
+public class Employee implements Serializable {
 
     private String name;
 

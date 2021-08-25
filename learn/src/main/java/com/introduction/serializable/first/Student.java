@@ -1,8 +1,10 @@
-package main.java.com.introduction.serializable;
+package main.java.com.introduction.serializable.first;
 
 import java.io.Serializable;
 
 public class Student implements Serializable {
+
+    private static final long serialVersionUID = 42L;
 
     /**
      * 用户名

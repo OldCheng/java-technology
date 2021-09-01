@@ -50,4 +50,6 @@ public class JUCDemo {
         countDownLatch.await();// 主线程在阻塞，当计数器==0，就唤醒主线程往下执行。
         System.out.println("主线程:在所有任务运行完成后，进行结果汇总");
     }
+
+
 }

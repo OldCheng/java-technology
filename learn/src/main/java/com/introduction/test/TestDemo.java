@@ -1,5 +1,9 @@
 package main.java.com.introduction.test;
 
+import java.io.IOException;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.*;
 
 /**
@@ -14,6 +18,13 @@ public class TestDemo {
     public static double i = Math.random();
 
     public static void main(String[] args) {
+        Date effectiveTime = new Date(0);
+
+        System.out.println(new Date().getTime());
+        LocalDateTime dateTime = LocalDateTime.now();
+        LocalDateTime dateTime1 = dateTime.minusMonths(3);
+        Date date = Date.from(dateTime1.atZone(ZoneId.systemDefault()).toInstant());
+        System.out.println(date.getTime());
 
         Random random = new Random(24);
         for(i=0;i<100;i++){

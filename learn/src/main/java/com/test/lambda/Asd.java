@@ -1,6 +1,5 @@
 package main.java.com.test.lambda;
 
-import main.java.com.testtest.A;
 
 import java.util.Collection;
 

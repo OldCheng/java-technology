@@ -1,6 +1,5 @@
 package main.java.com.thinkinjava.thread.threadshareresource;
 
-import sun.awt.Mutex;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

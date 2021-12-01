@@ -1,9 +1,6 @@
 package main.java.com.testtest;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 /**
  * @Description
@@ -19,25 +16,29 @@ import java.util.List;
 public class Demo {
 
     public static void main(String[] args) {
+        Map<String, Boolean> favoriteMap = new HashMap<>();
+        System.out.println(favoriteMap.get("aaa"));
+
+
         List<Product> list = getProduct();
 
-        Collections.sort(list,new Comparator<Product>() {
-            @Override
-            public int compare(Product o1, Product o2) {
-                return o1.getPrice() - o2.getPrice();
-            }
-        });
+//        Collections.sort(list,new Comparator<Product>() {
+//            @Override
+//            public int compare(Product o1, Product o2) {
+//                return o1.getPrice() - o2.getPrice();
+//            }
+//        });
 
         list.sort(Comparator.comparingInt(Product::getPrice));
 
-        Collections.max(list, Comparator.comparingInt(Product::getPrice));
-
-        List<String> listqq = new ArrayList<>();
-        listqq.add("f");
-        listqq.add("g");
-        listqq.add("a");
-        listqq.sort(Comparator.reverseOrder());
-        System.out.println(listqq);
+//        Collections.max(list, Comparator.comparingInt(Product::getPrice));
+//
+//        List<String> listqq = new ArrayList<>();
+//        listqq.add("f");
+//        listqq.add("g");
+//        listqq.add("a");
+//        listqq.sort(Comparator.reverseOrder());
+//        System.out.println(listqq);
 
         System.out.println(list);
 

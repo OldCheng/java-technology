@@ -59,4 +59,14 @@ public class Student {
     public int hashCode() {
         return Objects.hash(age);
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "stuName='" + stuName + '\'' +
+                ", age=" + age +
+                ", score=" + score +
+                ", clazz=" + clazz +
+                '}';
+    }
 }

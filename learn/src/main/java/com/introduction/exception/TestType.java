@@ -21,6 +21,7 @@ public class TestType {
             stringBuilder.append("file:"+stackTrace[0].getClassName()+"\n");
             stringBuilder.append("method:"+stackTrace[0].getMethodName()+"\n");
             stringBuilder.append("line:"+stackTrace[0].getLineNumber());
+            System.out.println(stringBuilder);
         }
 
     }

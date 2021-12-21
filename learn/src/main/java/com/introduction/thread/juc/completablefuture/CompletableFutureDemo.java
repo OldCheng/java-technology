@@ -696,6 +696,7 @@ public class CompletableFutureDemo {
         //等待子任务执行完成
         System.out.println("cf4 run result->"+cf4.get());
         System.out.println("main thread exit,time->"+System.currentTimeMillis());
+
     }
 
 }

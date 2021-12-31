@@ -7,8 +7,8 @@ public class TestSync {
         Producer p  = new Producer(resource);
         Consumer c = new Consumer(resource);
 
-        new Thread(p).start();
         new Thread(c).start();
+        new Thread(p).start();
 
     }
 }

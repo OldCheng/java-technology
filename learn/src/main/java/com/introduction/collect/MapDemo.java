@@ -12,7 +12,7 @@ public class MapDemo {
 
     }
 
-    private void ad(){
+    private void ad() {
 
     }
 }

@@ -1,4 +1,5 @@
-package main.java.com.introduction.thread.sync;
+package main.java.com.introduction.thread.produceandconsumer.sync;
+
 
 public class TestSync {
     public static void main(String[] args) {

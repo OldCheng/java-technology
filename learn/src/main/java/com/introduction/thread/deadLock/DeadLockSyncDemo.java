@@ -1,4 +1,4 @@
-package main.java.com.introduction.thread.DeadLock;
+package main.java.com.introduction.thread.deadLock;
 
 public class DeadLockSyncDemo {
     public static void main(String[] args) {

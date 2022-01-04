@@ -1,4 +1,4 @@
-package main.java.com.introduction.thread.sync;
+package main.java.com.introduction.thread.produceandconsumer.sync;
 
 public class Consumer implements Runnable {
 

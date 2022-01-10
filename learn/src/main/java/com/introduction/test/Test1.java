@@ -10,6 +10,11 @@ import java.util.*;
 public class Test1 {
 
     public static void main(String[] args) {
+
+        String str = "PDP response add an field addToCarStatus for mobile to verify add car";
+        str.split(" ");
+        String join = String.join("-", str.split(" "));
+        System.out.println(join);
         aa();
     }
 

@@ -11,7 +11,7 @@ public class Test1 {
 
     public static void main(String[] args) {
 
-        String str = "PDP response add an field addToCarStatus for mobile to verify add car";
+        String str = "shopping cart display subItem variant info";
         str.split(" ");
         String join = String.join("-", str.split(" "));
         System.out.println(join);

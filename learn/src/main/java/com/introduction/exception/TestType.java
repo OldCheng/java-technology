@@ -7,8 +7,8 @@ public class TestType {
             int i=9/0;
         }catch (Exception e){
             e.printStackTrace();
-            System.out.println(e);
-            System.out.println(e.getMessage());
+            System.out.println("e:-------"+e);
+            System.out.println("e.getMessage----"+e.getMessage());
             System.out.println(e.getLocalizedMessage());
             System.out.println(e.getStackTrace()[0].getClassName());
             System.out.println(e.getStackTrace()[0].getFileName());
